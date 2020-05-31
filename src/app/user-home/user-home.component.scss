@@ -1,0 +1,32 @@
+.profilepic {
+    img {
+        width: 90%;
+        padding: 2vh;
+    }
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.flex-column-cus {
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.row {
+    margin: 0;
+    .card {
+        height: 20vh;
+    }
+    .col-md-4 {
+        padding-bottom: 0 !important;
+    }
+}
+
+.card-text {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }

@@ -1,0 +1,11 @@
+.app-main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar-nav > li{
+    margin-left:15px;
+    padding-bottom: 1vh;
+    margin-right:15px;
+}

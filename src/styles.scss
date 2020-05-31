@@ -1,1 +1,59 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$task-manager-ui-primary: mat-palette($mat-indigo);
+$task-manager-ui-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$task-manager-ui-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$task-manager-ui-theme: mat-light-theme($task-manager-ui-primary, $task-manager-ui-accent, $task-manager-ui-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($task-manager-ui-theme);
+
 /* You can add global styles to this file, and also import other style files */
+.header {
+    height: 14vh;
+    max-height: 14vh;
+    padding: 2rem !important;
+    background-color: #FF9933;
+}
+
+div.content{
+    flex-grow: 1;
+}
+
+footer {
+    height: 10vh;
+    max-height: 10vh;
+    padding: 1.5rem;
+    font-style: italic;
+    text-align: center;
+    font-weight: bolder;
+    background-color: #138808 !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #000080 !important;}
+
+mat-form-field{
+    width: 100%;
+}
+
+.half-width{
+    width: 50%;
+}
