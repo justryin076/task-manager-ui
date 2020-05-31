@@ -13,7 +13,7 @@ export class HttpCallsService {
 
   constructor(private http: HttpClient,
     @Inject(SESSION_STORAGE) private sessionStorage: WebStorageService) {
-    this.baseURL = 'http://localhost:3000/';
+    this.baseURL = 'https://sri076-task-manager-api.herokuapp.com/';
     this.headers = new HttpHeaders();
   }
 
