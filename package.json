@@ -21,6 +21,7 @@
     "@angular/platform-browser": "~8.2.7",
     "@angular/platform-browser-dynamic": "~8.2.7",
     "@angular/router": "~8.2.7",
+    "@angular-devkit/build-angular": "^0.803.25",
     "@aws-sdk/eventstream-marshaller": "0.1.0-preview.2",
     "@popperjs/core": "^2.4.0",
     "angular-material": "^1.1.22",
